@@ -1,4 +1,5 @@
-# Dicey-tech-project
+# Creating a Master Property List for London
+
 ## About this project
 
 This project involves web scraping property listings from multiple websites for the Greater London area. The goal is to create a master dataset that combines property information from multiple sources and provides valuable insights into the London real estate market.
