@@ -144,6 +144,7 @@ This function loads data from a Pandas DataFrame into a specified table in Googl
 Parameters:
 
 df (DataFrame): The DataFrame containing the data to be loaded.
+
 tbl (str): The name of the table in BigQuery where the data will be loaded.
 Steps:
 
