@@ -161,6 +161,8 @@ Wait for the data loading job to complete using job.result().
 Print the number of rows loaded into the table.
 Ensure that you have the necessary dependencies installed and provide the correct project ID, dataset ID, table name, and DataFrame (data) when calling the load_data_to_bigquery() function.
 
+![Screenshot (660)](https://github.com/ajayi-george/Dicey-tech-project/assets/128624260/bca55fb3-e845-432a-8710-4b274595f86c)
+
 Please note that this code assumes you have the required permissions and access to create tables and load data into Google BigQuery.
 
 ## Architecture diagram
