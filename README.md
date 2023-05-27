@@ -137,6 +137,31 @@ Dependencies:
 - pandas: Used for data manipulation and storing scraped data in DataFrames.
 - undetected_chromedriver: Used for automating browser actions (specifically for Zoopla scraping).
 
+Function: load_data_to_bigquery(df, tbl)
+
+This function loads data from a Pandas DataFrame into a specified table in Google BigQuery.
+
+Parameters:
+
+df (DataFrame): The DataFrame containing the data to be loaded.
+tbl (str): The name of the table in BigQuery where the data will be loaded.
+Steps:
+
+Set the Google Cloud credentials path using os.environ['GOOGLE_APPLICATION_CREDENTIALS'].
+Define the project ID, dataset ID, and table ID based on your Google Cloud configuration.
+Create a BigQuery client using bigquery.Client().
+Set up a try-except block to handle table creation and data loading.
+Inside the try block:
+Define the table reference using client.dataset(dataset_id).table(table_id).
+Create a bigquery.Table object and use client.create_table() to create the table in BigQuery. If the table already exists, an exception is raised and caught.
+Load the DataFrame into the table using client.load_table_from_dataframe(), specifying the DataFrame, table reference, and location.
+If an exception occurs, log the error message, delete the table using client.delete_table(), and return from the function.
+Wait for the data loading job to complete using job.result().
+Print the number of rows loaded into the table.
+Ensure that you have the necessary dependencies installed and provide the correct project ID, dataset ID, table name, and DataFrame (data) when calling the load_data_to_bigquery() function.
+
+Please note that this code assumes you have the required permissions and access to create tables and load data into Google BigQuery.
+
 ## Architecture diagram
 
 ![first](https://github.com/ajayi-george/Dicey-tech-project/assets/128624260/de5f347a-33da-4e8b-97b3-1198d5d6cd89)
