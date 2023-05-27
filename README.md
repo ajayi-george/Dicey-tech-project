@@ -30,7 +30,7 @@ Usage:
 - The scraped data is stored in separate DataFrames, 'otm_data','rightmove_data' and 'zoopla_data', respectively.
 
 Code Structure:
-- The code is divided into thre parts, one for Rightmove scraping and other two for OTM and Zoopla scraping.
+- The code is divided into three parts, one for Rightmove scraping and other two for OTM and Zoopla scraping.
 - Each part consists of a class that handles the scraping and data processing.
 
 Rightmove Scraper:
