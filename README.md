@@ -165,4 +165,5 @@ Please note that this code assumes you have the required permissions and access 
 
 ## Architecture diagram
 
-![first](https://github.com/ajayi-george/Dicey-tech-project/assets/128624260/de5f347a-33da-4e8b-97b3-1198d5d6cd89)
+![Screenshot (659)](https://github.com/ajayi-george/Dicey-tech-project/assets/128624260/95ae76fe-48b8-4dad-ae38-c1956210182c)
+
