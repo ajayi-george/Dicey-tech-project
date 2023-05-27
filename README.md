@@ -22,7 +22,7 @@ These libraries collectively provide the necessary functionality for web scrapin
 
 ## Property Scraper Documentation
 
-This code scrapes property data from two popular real estate websites,On the market(OTM) Rightmove and Zoopla. It extracts property details such as prices, titles, addresses, descriptions, agents, and other relevant information. The data is then processed and stored in DataFrames.
+This code scrapes property data from three popular real estate websites,On the market(OTM) Rightmove and Zoopla. It extracts property details such as prices, titles, addresses, descriptions, agents, and other relevant information. The data is then processed and stored in DataFrames.
 
 Usage:
 - Ensure you have the necessary dependencies installed (requests, BeautifulSoup, pandas, undetected_chromedriver).
@@ -47,7 +47,7 @@ Zoopla Scraper:
   - parse(html): Extracts property details from the HTML content using BeautifulSoup.
   - to_dataframe(): Converts the scraped data into a DataFrame.
   - transform_run(url): Performs the web scraping process for Zoopla.
-  - 
+  
 OTM Scraper:
 - Class Name: OTM
 - Methods:
